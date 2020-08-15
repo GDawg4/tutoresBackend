@@ -22,34 +22,10 @@ def vibe_check(user, obj, request):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
-    permission_classes = (
-        APIPermissionClassFactory(
-            name='ReaderPermission',
-            permission_configuration={
-                'base': {
-                    'create': True,
-                    'list': True,
-                },
-                'instance': {
-                    'retrieve': is_self,
-                    'destroy': False,
-                    'update': False,
-                    'books_owned': True,
-                    'all_transactions': True,
-                    'buy': True,
-                    'exists': True,
-                    'gift': True,
-                    'see_notes': True,
-                    'cart': True,
-                    'delete_from_cart': True,
-                    'clear_cart': True,
-                    'own_transactions': True,
-                }
-            }
-        ),
-    )
 
     def perform_create(self, serializer):
         user = self.request.user
         print(user)
+        user = serializer.save()
+        print(serializer.data)
         return Response(serializer.data)

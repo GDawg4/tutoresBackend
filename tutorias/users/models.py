@@ -2,7 +2,6 @@ from django.db import models
 
 from django.contrib.auth.models import AbstractBaseUser, BaseUserManager
 
-
 class UserManager(BaseUserManager):
     def create_user(self, email, name, lastname, password):
         if not email:
@@ -53,7 +52,7 @@ class User(AbstractBaseUser):
     objects = UserManager()
 
     def __str__(self):
-        return self.username
+        return self.email
 
     def has_perm(self, perm, obj=None):
         return True  # self.is_admin

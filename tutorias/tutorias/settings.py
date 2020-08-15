@@ -88,6 +88,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'tutorias.wsgi.application'
 
+AUTH_USER_MODEL = 'users.User'
 
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
@@ -97,7 +98,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'TutoriasDB',
         'USER': 'postgres',
-        'PASSWORD': '2x4x6x8x10',
+        'PASSWORD': '...',
         'HOST': 'localhost',
         'PORT': '5432'
     }
