@@ -55,6 +55,7 @@ INSTALLED_APPS = [
     'event_types.apps.EventTypesConfig',
     'hosts.apps.HostsConfig',
     'event_assigns.apps.EventAssignsConfig',
+    'classes.apps.ClassesConfig'
 ]
 
 MIDDLEWARE = [
@@ -98,7 +99,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'TutoriasDB',
         'USER': 'postgres',
-        'PASSWORD': '...',
+        'PASSWORD': '2x4x6x8x10',
         'HOST': 'localhost',
         'PORT': '5432'
     }

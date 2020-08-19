@@ -33,6 +33,7 @@ from hosts.views import HostViewSet
 from tutors.views import TutorViewSet
 from event_types.views import EventTypeViewSet
 from event_assigns.views import EventAssignViewSet
+from classes.views import ClassesViewSet
 
 router = routers.DefaultRouter()
 
@@ -47,6 +48,7 @@ router.register(r'hosts', HostViewSet)
 router.register(r'event_types', EventTypeViewSet)
 router.register(r'tutors', TutorViewSet)
 router.register(r'event_assigns', EventAssignViewSet)
+router.register(r'classes', ClassesViewSet)
 
 
 urlpatterns = [
