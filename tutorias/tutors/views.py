@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.db.models import Q
 
 from guardian.shortcuts import assign_perm
 from rest_framework import viewsets
@@ -27,12 +28,17 @@ class TutorViewSet(viewsets.ModelViewSet):
                     'destroy': 'tutors.delete_tutor',
                     'update': 'tutors.change_tutor',
                     'partial_update': 'tutors.change_tutor',
-                    'courseTutors': True
-
+                    'courseTutors': True,
+                    'all_tutors':True
                 }
             }
         ),
     )
+
+    @action(detail=False, url_path='alltutors', methods=['get'])
+    def all_tutors(self, request):
+        tutors = Tutor.objects.all()
+        return Response(TutorSerializer(tutors, many=True).data)
 
     @action(detail=False, url_path='coursetutors', methods=['post'])
     def courseTutors(self, request):

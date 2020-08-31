@@ -15,5 +15,8 @@ class Tutor(models.Model):
         blank=True
     )
 
+    class Meta:
+        unique_together = ('user_id', 'course')
+
     def __str__(self):
         return 'Tutor: {}'.format(self.user_id)

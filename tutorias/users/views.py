@@ -22,10 +22,32 @@ def vibe_check(user, obj, request):
 class UserViewSet(viewsets.ModelViewSet):
     queryset = User.objects.all()
     serializer_class = UserSerializer
+    permission_classes = (
+        APIPermissionClassFactory(
+            name='ReaderPermission',
+            permission_configuration={
+                'base': {
+                    'create': True,
+                    'list': True,
+                },
+                'instance': {
+                    'retrieve': False,
+                    'destroy': False,
+                    'update': False,
+                    'get_info':True,
+                }
+            }
+        ),
+    )
 
     def perform_create(self, serializer):
         user = self.request.user
-        print(user)
         user = serializer.save()
-        print(serializer.data)
         return Response(serializer.data)
+
+    @action(detail=True, methods=['POST'], url_path='info')
+    def get_info(self, request, pk=None):
+        user = self.get_object()
+        info = get_object_or_404(User, email=user)
+        serialized = UserSerializer(info).data
+        return Response(serialized)

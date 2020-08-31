@@ -25,7 +25,7 @@ SECRET_KEY = 'wtz6qkqxf7p#m!ha*j1)t%h55^p^-sch6z5b7m5(!guih6lqbi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['192.168.1.10', 'localhost']
 
 
 # Application definition
@@ -55,7 +55,8 @@ INSTALLED_APPS = [
     'event_types.apps.EventTypesConfig',
     'hosts.apps.HostsConfig',
     'event_assigns.apps.EventAssignsConfig',
-    'classes.apps.ClassesConfig'
+    'classes.apps.ClassesConfig',
+    'tutorias_sessions.apps.TutoriasSessionsConfig'
 ]
 
 MIDDLEWARE = [

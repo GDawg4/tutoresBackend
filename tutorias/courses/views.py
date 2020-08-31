@@ -17,7 +17,7 @@ class CourseViewSet(viewsets.ModelViewSet):
             name='CoursePermission',
             permission_configuration={
                 'base': {
-                    'create': 'courses.add_course',
+                    'create': True,
                     'list': True,
                 },
                 'instance': {

@@ -45,6 +45,7 @@ class User(AbstractBaseUser):
     is_superuser = models.BooleanField(default=False)
     name = models.CharField(max_length=200)
     lastname = models.CharField(max_length=200)
+    type = models.CharField(max_length=20, default='user')
 
     USERNAME_FIELD = 'email'
     REQUIRED_FIELD = ['name', 'lastname']
