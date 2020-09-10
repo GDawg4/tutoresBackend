@@ -18,7 +18,12 @@ class TutoriasSessions(models.Model):
         on_delete=models.SET_NULL,
         null=True
     )
-    topic = models.CharField(max_length=50)
+    course = models.ForeignKey(
+        'courses.Course',
+        on_delete=models.SET_NULL,
+        null=True
+    )
+    topic = models.CharField(max_length=50, blank=True)
     rating = models.PositiveIntegerField()
     completed = models.BooleanField(default=False)
     pending = models.BooleanField(default=False)
