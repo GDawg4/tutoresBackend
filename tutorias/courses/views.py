@@ -2,12 +2,14 @@ from guardian.shortcuts import assign_perm
 from rest_framework import viewsets
 from rest_framework.decorators import action
 from rest_framework.response import Response
+from rest_framework import status
 
 from permissions.services import APIPermissionClassFactory
 from courses.models import Course
 from tutors.models import Tutor
 from tutors.serializers import TutorSerializer
 from courses.serializers import CourseSerializer
+
 
 class CourseViewSet(viewsets.ModelViewSet):
     queryset = Course.objects.all()
@@ -25,11 +27,12 @@ class CourseViewSet(viewsets.ModelViewSet):
                     'destroy': 'courses.delete_course',
                     'update': 'courses.change_course',
                     'partial_update': 'courses.change_course',
+                    'tutors': True
                 }
             }
         ),
     )
-        
+
     # @action(detail=True, url_path='coursetutors', methods=['post'])
     # def courseTutors(self, request):
     #     course = self.get_Object()
@@ -38,7 +41,6 @@ class CourseViewSet(viewsets.ModelViewSet):
     #     for tutor in Tutor.objects.filter(baby=baby):
     #         response.append(TutorSerializer(tutor).data)
     #     return Response(response)
-
 
     # @action(detail=False, methods=['post'])
     # def unfollow(self, request):
@@ -49,4 +51,10 @@ class CourseViewSet(viewsets.ModelViewSet):
     #         follow.delete()
     #         return Response({'status':'ok'})
     #     except:
-    #         return Response({'detail':'id is not valid'}) 
+    #         return Response({'detail':'id is not valid'})
+
+    @action(detail=True, url_path='tutors', methods=['get'])
+    def tutors(self, request, pk=None):
+        tutors = Tutor.objects.filter(course=pk).distinct('user_id')
+        tutors_id = [i.id for i in tutors]
+        return Response({'course': pk, 'tutors': tutors_id}, status=status.HTTP_200_OK)

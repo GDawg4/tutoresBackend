@@ -25,7 +25,7 @@ SECRET_KEY = 'wtz6qkqxf7p#m!ha*j1)t%h55^p^-sch6z5b7m5(!guih6lqbi'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.1.10', 'localhost']
+ALLOWED_HOSTS = ['192.168.1.10', 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -56,7 +56,10 @@ INSTALLED_APPS = [
     'hosts.apps.HostsConfig',
     'event_assigns.apps.EventAssignsConfig',
     'classes.apps.ClassesConfig',
-    'tutorias_sessions.apps.TutoriasSessionsConfig'
+    'tutorias_sessions.apps.TutoriasSessionsConfig',
+    'hours.apps.HoursConfig',
+    'days.apps.DaysConfig',
+    'day_hour.apps.DayHourConfig'
 ]
 
 MIDDLEWARE = [
@@ -98,7 +101,7 @@ AUTH_USER_MODEL = 'users.User'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'TutoriasDB',
+        'NAME': 'TutoriasDB2',
         'USER': 'postgres',
         'PASSWORD': '2x4x6x8x10',
         'HOST': 'localhost',

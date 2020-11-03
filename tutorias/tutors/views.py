@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.db.models import Q
 
+from rest_framework import status
 from guardian.shortcuts import assign_perm
 from rest_framework import viewsets
 from rest_framework.decorators import action
@@ -9,8 +10,11 @@ from rest_framework.response import Response
 from permissions.services import APIPermissionClassFactory
 from tutors.models import Tutor
 from users.models import User
+from day_hour.models import DayHour
+from day_hour.serializers import DayHourSerializers
 from users.serializers import UserSerializer
 from tutors.serializers import TutorSerializer
+
 
 class TutorViewSet(viewsets.ModelViewSet):
     queryset = Tutor.objects.all()
@@ -29,7 +33,9 @@ class TutorViewSet(viewsets.ModelViewSet):
                     'update': 'tutors.change_tutor',
                     'partial_update': 'tutors.change_tutor',
                     'courseTutors': True,
-                    'all_tutors':True
+                    'all_tutors':True,
+                    'tutor_day_hour':True,
+                    'dayhour':True
                 }
             }
         ),
@@ -54,4 +60,16 @@ class TutorViewSet(viewsets.ModelViewSet):
             return Response(response)
         except:
             return Response({'detail':'id is not valid'}) 
-        
+
+    @action(detail=True, url_path='dayhour', methods=['get'])
+    def tutor_day_hour(self, request, pk=None):
+        try:
+            print('hola')
+            all_day_hour = DayHour.objects.all()
+            day_hour = DayHour.objects.filter(tutor__user_id=pk)
+            start_list = [[False for j in range(15)] for i in range(7)]
+            for i in day_hour:
+                start_list[i.id//15][i.id % 15] = True
+            return Response(start_list, status=status.HTTP_200_OK)
+        except:
+            return Response({'detail':'Bad request'}, status=status.HTTP_400_BAD_REQUEST)

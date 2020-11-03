@@ -8,13 +8,12 @@ from courses.serializers import CourseSerializer
 
 
 class TutorSerializer(serializers.ModelSerializer):
-    user_id = UserSerializer(many=False)
-    course = CourseSerializer(many=False)
-
+    user = UserSerializer(read_only=True)
     class Meta:
         model = Tutor
         fields = (
             'id',
-            'user_id',
-            'course'
+            'user',
+            'course',
+            'hours'
         )
