@@ -101,9 +101,9 @@ AUTH_USER_MODEL = 'users.User'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'TutoriasDB2',
+        'NAME': 'TutoUVG',
         'USER': 'postgres',
-        'PASSWORD': '2x4x6x8x10',
+        'PASSWORD': '1234',
         'HOST': 'localhost',
         'PORT': '5432'
     }
