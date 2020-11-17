@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<django-objects version="1.0">
+  <object model="auth.permission" pk="1">
+    <field name="name" type="CharField">Can add log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">add_logentry</field>
+  </object>
+  <object model="auth.permission" pk="2">
+    <field name="name" type="CharField">Can change log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">change_logentry</field>
+  </object>
+  <object model="auth.permission" pk="3">
+    <field name="name" type="CharField">Can delete log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">delete_logentry</field>
+  </object>
+  <object model="auth.permission" pk="4">
+    <field name="name" type="CharField">Can view log entry</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">1</field>
+    <field name="codename" type="CharField">view_logentry</field>
+  </object>
+  <object model="auth.permission" pk="5">
+    <field name="name" type="CharField">Can add permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">add_permission</field>
+  </object>
+  <object model="auth.permission" pk="6">
+    <field name="name" type="CharField">Can change permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">change_permission</field>
+  </object>
+  <object model="auth.permission" pk="7">
+    <field name="name" type="CharField">Can delete permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">delete_permission</field>
+  </object>
+  <object model="auth.permission" pk="8">
+    <field name="name" type="CharField">Can view permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">2</field>
+    <field name="codename" type="CharField">view_permission</field>
+  </object>
+  <object model="auth.permission" pk="9">
+    <field name="name" type="CharField">Can add group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">add_group</field>
+  </object>
+  <object model="auth.permission" pk="10">
+    <field name="name" type="CharField">Can change group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">change_group</field>
+  </object>
+  <object model="auth.permission" pk="11">
+    <field name="name" type="CharField">Can delete group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">delete_group</field>
+  </object>
+  <object model="auth.permission" pk="12">
+    <field name="name" type="CharField">Can view group</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">3</field>
+    <field name="codename" type="CharField">view_group</field>
+  </object>
+  <object model="auth.permission" pk="13">
+    <field name="name" type="CharField">Can add content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">add_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="14">
+    <field name="name" type="CharField">Can change content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">change_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="15">
+    <field name="name" type="CharField">Can delete content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">delete_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="16">
+    <field name="name" type="CharField">Can view content type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">4</field>
+    <field name="codename" type="CharField">view_contenttype</field>
+  </object>
+  <object model="auth.permission" pk="17">
+    <field name="name" type="CharField">Can add session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">add_session</field>
+  </object>
+  <object model="auth.permission" pk="18">
+    <field name="name" type="CharField">Can change session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">change_session</field>
+  </object>
+  <object model="auth.permission" pk="19">
+    <field name="name" type="CharField">Can delete session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">delete_session</field>
+  </object>
+  <object model="auth.permission" pk="20">
+    <field name="name" type="CharField">Can view session</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">5</field>
+    <field name="codename" type="CharField">view_session</field>
+  </object>
+  <object model="auth.permission" pk="21">
+    <field name="name" type="CharField">Can add group object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">add_groupobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="22">
+    <field name="name" type="CharField">Can change group object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">change_groupobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="23">
+    <field name="name" type="CharField">Can delete group object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">delete_groupobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="24">
+    <field name="name" type="CharField">Can view group object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">6</field>
+    <field name="codename" type="CharField">view_groupobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="25">
+    <field name="name" type="CharField">Can add user object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">add_userobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="26">
+    <field name="name" type="CharField">Can change user object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">change_userobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="27">
+    <field name="name" type="CharField">Can delete user object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">delete_userobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="28">
+    <field name="name" type="CharField">Can view user object permission</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">7</field>
+    <field name="codename" type="CharField">view_userobjectpermission</field>
+  </object>
+  <object model="auth.permission" pk="29">
+    <field name="name" type="CharField">Can add career</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">add_career</field>
+  </object>
+  <object model="auth.permission" pk="30">
+    <field name="name" type="CharField">Can change career</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">change_career</field>
+  </object>
+  <object model="auth.permission" pk="31">
+    <field name="name" type="CharField">Can delete career</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">delete_career</field>
+  </object>
+  <object model="auth.permission" pk="32">
+    <field name="name" type="CharField">Can view career</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">8</field>
+    <field name="codename" type="CharField">view_career</field>
+  </object>
+  <object model="auth.permission" pk="33">
+    <field name="name" type="CharField">Can add faculty</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">add_faculty</field>
+  </object>
+  <object model="auth.permission" pk="34">
+    <field name="name" type="CharField">Can change faculty</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">change_faculty</field>
+  </object>
+  <object model="auth.permission" pk="35">
+    <field name="name" type="CharField">Can delete faculty</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">delete_faculty</field>
+  </object>
+  <object model="auth.permission" pk="36">
+    <field name="name" type="CharField">Can view faculty</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">9</field>
+    <field name="codename" type="CharField">view_faculty</field>
+  </object>
+  <object model="auth.permission" pk="37">
+    <field name="name" type="CharField">Can add university</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">add_university</field>
+  </object>
+  <object model="auth.permission" pk="38">
+    <field name="name" type="CharField">Can change university</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">change_university</field>
+  </object>
+  <object model="auth.permission" pk="39">
+    <field name="name" type="CharField">Can delete university</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">delete_university</field>
+  </object>
+  <object model="auth.permission" pk="40">
+    <field name="name" type="CharField">Can view university</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">10</field>
+    <field name="codename" type="CharField">view_university</field>
+  </object>
+  <object model="auth.permission" pk="41">
+    <field name="name" type="CharField">Can add user type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">add_usertype</field>
+  </object>
+  <object model="auth.permission" pk="42">
+    <field name="name" type="CharField">Can change user type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">change_usertype</field>
+  </object>
+  <object model="auth.permission" pk="43">
+    <field name="name" type="CharField">Can delete user type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">delete_usertype</field>
+  </object>
+  <object model="auth.permission" pk="44">
+    <field name="name" type="CharField">Can view user type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">11</field>
+    <field name="codename" type="CharField">view_usertype</field>
+  </object>
+  <object model="auth.permission" pk="45">
+    <field name="name" type="CharField">Can add user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">add_user</field>
+  </object>
+  <object model="auth.permission" pk="46">
+    <field name="name" type="CharField">Can change user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">change_user</field>
+  </object>
+  <object model="auth.permission" pk="47">
+    <field name="name" type="CharField">Can delete user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">delete_user</field>
+  </object>
+  <object model="auth.permission" pk="48">
+    <field name="name" type="CharField">Can view user</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">12</field>
+    <field name="codename" type="CharField">view_user</field>
+  </object>
+  <object model="auth.permission" pk="49">
+    <field name="name" type="CharField">Can add tutor</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">add_tutor</field>
+  </object>
+  <object model="auth.permission" pk="50">
+    <field name="name" type="CharField">Can change tutor</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">change_tutor</field>
+  </object>
+  <object model="auth.permission" pk="51">
+    <field name="name" type="CharField">Can delete tutor</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">delete_tutor</field>
+  </object>
+  <object model="auth.permission" pk="52">
+    <field name="name" type="CharField">Can view tutor</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">13</field>
+    <field name="codename" type="CharField">view_tutor</field>
+  </object>
+  <object model="auth.permission" pk="53">
+    <field name="name" type="CharField">Can add classroom</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">14</field>
+    <field name="codename" type="CharField">add_classroom</field>
+  </object>
+  <object model="auth.permission" pk="54">
+    <field name="name" type="CharField">Can change classroom</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">14</field>
+    <field name="codename" type="CharField">change_classroom</field>
+  </object>
+  <object model="auth.permission" pk="55">
+    <field name="name" type="CharField">Can delete classroom</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">14</field>
+    <field name="codename" type="CharField">delete_classroom</field>
+  </object>
+  <object model="auth.permission" pk="56">
+    <field name="name" type="CharField">Can view classroom</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">14</field>
+    <field name="codename" type="CharField">view_classroom</field>
+  </object>
+  <object model="auth.permission" pk="57">
+    <field name="name" type="CharField">Can add course</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">15</field>
+    <field name="codename" type="CharField">add_course</field>
+  </object>
+  <object model="auth.permission" pk="58">
+    <field name="name" type="CharField">Can change course</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">15</field>
+    <field name="codename" type="CharField">change_course</field>
+  </object>
+  <object model="auth.permission" pk="59">
+    <field name="name" type="CharField">Can delete course</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">15</field>
+    <field name="codename" type="CharField">delete_course</field>
+  </object>
+  <object model="auth.permission" pk="60">
+    <field name="name" type="CharField">Can view course</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">15</field>
+    <field name="codename" type="CharField">view_course</field>
+  </object>
+  <object model="auth.permission" pk="61">
+    <field name="name" type="CharField">Can add event</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">16</field>
+    <field name="codename" type="CharField">add_event</field>
+  </object>
+  <object model="auth.permission" pk="62">
+    <field name="name" type="CharField">Can change event</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">16</field>
+    <field name="codename" type="CharField">change_event</field>
+  </object>
+  <object model="auth.permission" pk="63">
+    <field name="name" type="CharField">Can delete event</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">16</field>
+    <field name="codename" type="CharField">delete_event</field>
+  </object>
+  <object model="auth.permission" pk="64">
+    <field name="name" type="CharField">Can view event</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">16</field>
+    <field name="codename" type="CharField">view_event</field>
+  </object>
+  <object model="auth.permission" pk="65">
+    <field name="name" type="CharField">Can add event type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">17</field>
+    <field name="codename" type="CharField">add_eventtype</field>
+  </object>
+  <object model="auth.permission" pk="66">
+    <field name="name" type="CharField">Can change event type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">17</field>
+    <field name="codename" type="CharField">change_eventtype</field>
+  </object>
+  <object model="auth.permission" pk="67">
+    <field name="name" type="CharField">Can delete event type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">17</field>
+    <field name="codename" type="CharField">delete_eventtype</field>
+  </object>
+  <object model="auth.permission" pk="68">
+    <field name="name" type="CharField">Can view event type</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">17</field>
+    <field name="codename" type="CharField">view_eventtype</field>
+  </object>
+  <object model="auth.permission" pk="69">
+    <field name="name" type="CharField">Can add host</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">18</field>
+    <field name="codename" type="CharField">add_host</field>
+  </object>
+  <object model="auth.permission" pk="70">
+    <field name="name" type="CharField">Can change host</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">18</field>
+    <field name="codename" type="CharField">change_host</field>
+  </object>
+  <object model="auth.permission" pk="71">
+    <field name="name" type="CharField">Can delete host</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">18</field>
+    <field name="codename" type="CharField">delete_host</field>
+  </object>
+  <object model="auth.permission" pk="72">
+    <field name="name" type="CharField">Can view host</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">18</field>
+    <field name="codename" type="CharField">view_host</field>
+  </object>
+  <object model="auth.permission" pk="73">
+    <field name="name" type="CharField">Can add event assign</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">19</field>
+    <field name="codename" type="CharField">add_eventassign</field>
+  </object>
+  <object model="auth.permission" pk="74">
+    <field name="name" type="CharField">Can change event assign</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">19</field>
+    <field name="codename" type="CharField">change_eventassign</field>
+  </object>
+  <object model="auth.permission" pk="75">
+    <field name="name" type="CharField">Can delete event assign</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">19</field>
+    <field name="codename" type="CharField">delete_eventassign</field>
+  </object>
+  <object model="auth.permission" pk="76">
+    <field name="name" type="CharField">Can view event assign</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">19</field>
+    <field name="codename" type="CharField">view_eventassign</field>
+  </object>
+  <object model="auth.permission" pk="77">
+    <field name="name" type="CharField">Can add classes</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">20</field>
+    <field name="codename" type="CharField">add_classes</field>
+  </object>
+  <object model="auth.permission" pk="78">
+    <field name="name" type="CharField">Can change classes</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">20</field>
+    <field name="codename" type="CharField">change_classes</field>
+  </object>
+  <object model="auth.permission" pk="79">
+    <field name="name" type="CharField">Can delete classes</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">20</field>
+    <field name="codename" type="CharField">delete_classes</field>
+  </object>
+  <object model="auth.permission" pk="80">
+    <field name="name" type="CharField">Can view classes</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">20</field>
+    <field name="codename" type="CharField">view_classes</field>
+  </object>
+  <object model="auth.permission" pk="81">
+    <field name="name" type="CharField">Can add tutorias sessions</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">21</field>
+    <field name="codename" type="CharField">add_tutoriassessions</field>
+  </object>
+  <object model="auth.permission" pk="82">
+    <field name="name" type="CharField">Can change tutorias sessions</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">21</field>
+    <field name="codename" type="CharField">change_tutoriassessions</field>
+  </object>
+  <object model="auth.permission" pk="83">
+    <field name="name" type="CharField">Can delete tutorias sessions</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">21</field>
+    <field name="codename" type="CharField">delete_tutoriassessions</field>
+  </object>
+  <object model="auth.permission" pk="84">
+    <field name="name" type="CharField">Can view tutorias sessions</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">21</field>
+    <field name="codename" type="CharField">view_tutoriassessions</field>
+  </object>
+  <object model="auth.permission" pk="85">
+    <field name="name" type="CharField">Can add hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">22</field>
+    <field name="codename" type="CharField">add_hour</field>
+  </object>
+  <object model="auth.permission" pk="86">
+    <field name="name" type="CharField">Can change hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">22</field>
+    <field name="codename" type="CharField">change_hour</field>
+  </object>
+  <object model="auth.permission" pk="87">
+    <field name="name" type="CharField">Can delete hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">22</field>
+    <field name="codename" type="CharField">delete_hour</field>
+  </object>
+  <object model="auth.permission" pk="88">
+    <field name="name" type="CharField">Can view hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">22</field>
+    <field name="codename" type="CharField">view_hour</field>
+  </object>
+  <object model="auth.permission" pk="89">
+    <field name="name" type="CharField">Can add day</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">23</field>
+    <field name="codename" type="CharField">add_day</field>
+  </object>
+  <object model="auth.permission" pk="90">
+    <field name="name" type="CharField">Can change day</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">23</field>
+    <field name="codename" type="CharField">change_day</field>
+  </object>
+  <object model="auth.permission" pk="91">
+    <field name="name" type="CharField">Can delete day</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">23</field>
+    <field name="codename" type="CharField">delete_day</field>
+  </object>
+  <object model="auth.permission" pk="92">
+    <field name="name" type="CharField">Can view day</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">23</field>
+    <field name="codename" type="CharField">view_day</field>
+  </object>
+  <object model="auth.permission" pk="93">
+    <field name="name" type="CharField">Can add day hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">24</field>
+    <field name="codename" type="CharField">add_dayhour</field>
+  </object>
+  <object model="auth.permission" pk="94">
+    <field name="name" type="CharField">Can change day hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">24</field>
+    <field name="codename" type="CharField">change_dayhour</field>
+  </object>
+  <object model="auth.permission" pk="95">
+    <field name="name" type="CharField">Can delete day hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">24</field>
+    <field name="codename" type="CharField">delete_dayhour</field>
+  </object>
+  <object model="auth.permission" pk="96">
+    <field name="name" type="CharField">Can view day hour</field>
+    <field name="content_type" rel="ManyToOneRel" to="contenttypes.contenttype">24</field>
+    <field name="codename" type="CharField">view_dayhour</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="1">
+    <field name="app_label" type="CharField">admin</field>
+    <field name="model" type="CharField">logentry</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="2">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">permission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="3">
+    <field name="app_label" type="CharField">auth</field>
+    <field name="model" type="CharField">group</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="4">
+    <field name="app_label" type="CharField">contenttypes</field>
+    <field name="model" type="CharField">contenttype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="5">
+    <field name="app_label" type="CharField">sessions</field>
+    <field name="model" type="CharField">session</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="6">
+    <field name="app_label" type="CharField">guardian</field>
+    <field name="model" type="CharField">groupobjectpermission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="7">
+    <field name="app_label" type="CharField">guardian</field>
+    <field name="model" type="CharField">userobjectpermission</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="8">
+    <field name="app_label" type="CharField">careers</field>
+    <field name="model" type="CharField">career</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="9">
+    <field name="app_label" type="CharField">faculties</field>
+    <field name="model" type="CharField">faculty</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="10">
+    <field name="app_label" type="CharField">universities</field>
+    <field name="model" type="CharField">university</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="11">
+    <field name="app_label" type="CharField">user_types</field>
+    <field name="model" type="CharField">usertype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="12">
+    <field name="app_label" type="CharField">users</field>
+    <field name="model" type="CharField">user</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="13">
+    <field name="app_label" type="CharField">tutors</field>
+    <field name="model" type="CharField">tutor</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="14">
+    <field name="app_label" type="CharField">classrooms</field>
+    <field name="model" type="CharField">classroom</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="15">
+    <field name="app_label" type="CharField">courses</field>
+    <field name="model" type="CharField">course</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="16">
+    <field name="app_label" type="CharField">events</field>
+    <field name="model" type="CharField">event</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="17">
+    <field name="app_label" type="CharField">event_types</field>
+    <field name="model" type="CharField">eventtype</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="18">
+    <field name="app_label" type="CharField">hosts</field>
+    <field name="model" type="CharField">host</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="19">
+    <field name="app_label" type="CharField">event_assigns</field>
+    <field name="model" type="CharField">eventassign</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="20">
+    <field name="app_label" type="CharField">classes</field>
+    <field name="model" type="CharField">classes</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="21">
+    <field name="app_label" type="CharField">tutorias_sessions</field>
+    <field name="model" type="CharField">tutoriassessions</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="22">
+    <field name="app_label" type="CharField">hours</field>
+    <field name="model" type="CharField">hour</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="23">
+    <field name="app_label" type="CharField">days</field>
+    <field name="model" type="CharField">day</field>
+  </object>
+  <object model="contenttypes.contenttype" pk="24">
+    <field name="app_label" type="CharField">day_hour</field>
+    <field name="model" type="CharField">dayhour</field>
+  </object>
+  <object model="users.user" pk="1">
+    <field name="password" type="CharField">!NLXqVhKF9z6ZbRaIAvfW81dAOW2HoLtbXOBMXvgw</field>
+    <field name="email" type="CharField">AnonymousUser</field>
+    <field name="date_joined" type="DateTimeField">2020-09-14T05:53:23.863220+00:00</field>
+    <field name="last_login" type="DateTimeField">2020-09-14T05:53:23.863220+00:00</field>
+    <field name="is_admin" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="name" type="CharField"></field>
+    <field name="lastname" type="CharField"></field>
+    <field name="type" type="CharField">user</field>
+  </object>
+  <object model="users.user" pk="2">
+    <field name="password" type="CharField">pbkdf2_sha256$216000$XJFggcNYuaCu$bKpqFBpUmQmDxYcu30A0zhPo+NtLVYcC/XtwoFDvxO4=</field>
+    <field name="email" type="CharField">che18123@uvg.edu.gt</field>
+    <field name="date_joined" type="DateTimeField">2020-09-14T06:01:21.829389+00:00</field>
+    <field name="last_login" type="DateTimeField">2020-09-14T06:01:21.829389+00:00</field>
+    <field name="is_admin" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="name" type="CharField">Miguel</field>
+    <field name="lastname" type="CharField">Chen</field>
+    <field name="type" type="CharField">tutor</field>
+  </object>
+  <object model="users.user" pk="3">
+    <field name="password" type="CharField">pbkdf2_sha256$216000$MPJANkmZcpG3$NyKfdGVorMeNoKvqq12J0Ro11UW84+nGQRMGVCCpBJw=</field>
+    <field name="email" type="CharField">gar18102@uvg.edu.gt</field>
+    <field name="date_joined" type="DateTimeField">2020-09-14T16:52:08.222148+00:00</field>
+    <field name="last_login" type="DateTimeField">2020-09-14T16:52:08.222148+00:00</field>
+    <field name="is_admin" type="BooleanField">False</field>
+    <field name="is_active" type="BooleanField">True</field>
+    <field name="is_staff" type="BooleanField">False</field>
+    <field name="is_superuser" type="BooleanField">False</field>
+    <field name="name" type="CharField">Rodrigo</field>
+    <field name="lastname" type="CharField">Garoz</field>
+    <field name="type" type="CharField">user</field>
+  </object>
+  <object model="tutors.tutor" pk="1">
+    <field name="user" rel="ManyToOneRel" to="users.user">2</field>
+    <field name="course" rel="ManyToManyRel" to="courses.course"><object pk="5"></object><object pk="6"></object><object pk="10"></object></field>
+    <field name="hours" rel="ManyToManyRel" to="day_hour.dayhour"><object pk="2"></object><object pk="3"></object><object pk="4"></object><object pk="17"></object><object pk="18"></object><object pk="19"></object></field>
+  </object>
+  <object model="tutors.tutor" pk="2">
+    <field name="user" rel="ManyToOneRel" to="users.user">3</field>
+    <field name="course" rel="ManyToManyRel" to="courses.course"><object pk="1"></object><object pk="2"></object><object pk="5"></object><object pk="7"></object></field>
+    <field name="hours" rel="ManyToManyRel" to="day_hour.dayhour"><object pk="12"></object><object pk="13"></object><object pk="27"></object><object pk="28"></object><object pk="42"></object><object pk="43"></object><object pk="57"></object><object pk="58"></object><object pk="72"></object><object pk="73"></object></field>
+  </object>
+  <object model="courses.course" pk="1">
+    <field name="name" type="CharField">Emprendimiento e Innovacion</field>
+    <field name="code" type="CharField">CU177</field>
+  </object>
+  <object model="courses.course" pk="2">
+    <field name="name" type="CharField">Mindfulness y liderazgo positivo</field>
+    <field name="code" type="CharField">PP198</field>
+  </object>
+  <object model="courses.course" pk="3">
+    <field name="name" type="CharField">Logica matemotica</field>
+    <field name="code" type="CharField">MM2012</field>
+  </object>
+  <object model="courses.course" pk="4">
+    <field name="name" type="CharField">Groficas por computadora</field>
+    <field name="code" type="CharField">CC3044</field>
+  </object>
+  <object model="courses.course" pk="5">
+    <field name="name" type="CharField">Ingenieroa de software 2</field>
+    <field name="code" type="CharField">CC3061</field>
+  </object>
+  <object model="courses.course" pk="6">
+    <field name="name" type="CharField">Cifrado de informacion</field>
+    <field name="code" type="CharField">CC3078</field>
+  </object>
+  <object model="courses.course" pk="7">
+    <field name="name" type="CharField">Estadostica 1</field>
+    <field name="code" type="CharField">CU170</field>
+  </object>
+  <object model="courses.course" pk="8">
+    <field name="name" type="CharField">Colculo 1</field>
+    <field name="code" type="CharField">MM2013</field>
+  </object>
+  <object model="courses.course" pk="9">
+    <field name="name" type="CharField">Fosica 1</field>
+    <field name="code" type="CharField">FF2016</field>
+  </object>
+  <object model="courses.course" pk="10">
+    <field name="name" type="CharField">Pensamiento cuantitativo</field>
+    <field name="code" type="CharField">CU169</field>
+  </object>
+  <object model="tutorias_sessions.tutoriassessions" pk="4">
+    <field name="start" type="DateTimeField">2020-11-17T20:00:00.885000+00:00</field>
+    <field name="end" type="DateTimeField">2020-11-17T21:00:00.647000+00:00</field>
+    <field name="tutor" rel="ManyToOneRel" to="tutors.tutor"><None></None></field>
+    <field name="student" rel="ManyToOneRel" to="users.user"><None></None></field>
+    <field name="course" rel="ManyToOneRel" to="courses.course"><None></None></field>
+    <field name="topic" type="CharField">Colculo 1</field>
+    <field name="rating" type="PositiveIntegerField">0</field>
+    <field name="completed" type="BooleanField">False</field>
+    <field name="pending" type="BooleanField">True</field>
+  </object>
+  <object model="hours.hour" pk="1">
+    <field name="hour" type="PositiveIntegerField">8</field>
+  </object>
+  <object model="hours.hour" pk="2">
+    <field name="hour" type="PositiveIntegerField">9</field>
+  </object>
+  <object model="hours.hour" pk="3">
+    <field name="hour" type="PositiveIntegerField">10</field>
+  </object>
+  <object model="hours.hour" pk="4">
+    <field name="hour" type="PositiveIntegerField">11</field>
+  </object>
+  <object model="hours.hour" pk="5">
+    <field name="hour" type="PositiveIntegerField">12</field>
+  </object>
+  <object model="hours.hour" pk="6">
+    <field name="hour" type="PositiveIntegerField">13</field>
+  </object>
+  <object model="hours.hour" pk="7">
+    <field name="hour" type="PositiveIntegerField">14</field>
+  </object>
+  <object model="hours.hour" pk="8">
+    <field name="hour" type="PositiveIntegerField">15</field>
+  </object>
+  <object model="hours.hour" pk="9">
+    <field name="hour" type="PositiveIntegerField">16</field>
+  </object>
+  <object model="hours.hour" pk="10">
+    <field name="hour" type="PositiveIntegerField">17</field>
+  </object>
+  <object model="hours.hour" pk="11">
+    <field name="hour" type="PositiveIntegerField">18</field>
+  </object>
+  <object model="hours.hour" pk="12">
+    <field name="hour" type="PositiveIntegerField">19</field>
+  </object>
+  <object model="hours.hour" pk="13">
+    <field name="hour" type="PositiveIntegerField">20</field>
+  </object>
+  <object model="hours.hour" pk="14">
+    <field name="hour" type="PositiveIntegerField">21</field>
+  </object>
+  <object model="hours.hour" pk="15">
+    <field name="hour" type="PositiveIntegerField">22</field>
+  </object>
+  <object model="days.day" pk="1">
+    <field name="day" type="CharField">Lunes</field>
+  </object>
+  <object model="days.day" pk="2">
+    <field name="day" type="CharField">Martes</field>
+  </object>
+  <object model="days.day" pk="3">
+    <field name="day" type="CharField">Miorcoles</field>
+  </object>
+  <object model="days.day" pk="4">
+    <field name="day" type="CharField">Jueves</field>
+  </object>
+  <object model="days.day" pk="5">
+    <field name="day" type="CharField">Viernes</field>
+  </object>
+  <object model="days.day" pk="6">
+    <field name="day" type="CharField">Sobado</field>
+  </object>
+  <object model="days.day" pk="7">
+    <field name="day" type="CharField">Domingo</field>
+  </object>
+  <object model="day_hour.dayhour" pk="1">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="2">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="3">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="4">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="5">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="6">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="7">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="8">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="9">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="10">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="11">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="12">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="13">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="14">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="15">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">1</field>
+  </object>
+  <object model="day_hour.dayhour" pk="16">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="17">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="18">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="19">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="20">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="21">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="22">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="23">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="24">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="25">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="26">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="27">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="28">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="29">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="30">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">2</field>
+  </object>
+  <object model="day_hour.dayhour" pk="31">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="32">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="33">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="34">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="35">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="36">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="37">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="38">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="39">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="40">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="41">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="42">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="43">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="44">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="45">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">3</field>
+  </object>
+  <object model="day_hour.dayhour" pk="46">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="47">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="48">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="49">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="50">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="51">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="52">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="53">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="54">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="55">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="56">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="57">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="58">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="59">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="60">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">4</field>
+  </object>
+  <object model="day_hour.dayhour" pk="61">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="62">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="63">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="64">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="65">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="66">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="67">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="68">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="69">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="70">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="71">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="72">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="73">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="74">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="75">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">5</field>
+  </object>
+  <object model="day_hour.dayhour" pk="76">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="77">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="78">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="79">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="80">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="81">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="82">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="83">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="84">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="85">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="86">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="87">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="88">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="89">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="90">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">6</field>
+  </object>
+  <object model="day_hour.dayhour" pk="91">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">1</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="92">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">2</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="93">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">3</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="94">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">4</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="95">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">5</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="96">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">6</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="97">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">7</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="98">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">8</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="99">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">9</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="100">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">10</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="101">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">13</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="102">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">11</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="103">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">14</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="104">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">15</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+  <object model="day_hour.dayhour" pk="105">
+    <field name="hour" rel="ManyToOneRel" to="hours.hour">12</field>
+    <field name="day" rel="ManyToOneRel" to="days.day">7</field>
+  </object>
+</django-objects>
