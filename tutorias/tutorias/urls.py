@@ -54,7 +54,6 @@ router.register(r'classes', ClassesViewSet)
 router.register(r'sessions', SessionViewSet)
 router.register(r'day_hour', DayHourViewSet)
 
-
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^api-auth/', include('rest_framework.urls')),

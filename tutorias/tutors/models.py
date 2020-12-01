@@ -12,4 +12,4 @@ class Tutor(models.Model):
     hours = models.ManyToManyField('day_hour.DayHour', related_name='hours')
 
     def __str__(self):
-        return 'Tutor: {}'.format(self.user_id)
+        return 'Tutor: {}'.format(self.user)
